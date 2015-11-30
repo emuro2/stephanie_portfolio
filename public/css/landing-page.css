@@ -43,6 +43,7 @@ h6 {
     color: #f8f8f8;
     background: url(../data/img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
+    opacity: .8; 
 }
 
 .intro-message {
