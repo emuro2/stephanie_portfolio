@@ -43,16 +43,16 @@
                 <a class="navbar-brand topnav" href="#" id="stephanie-header">Stephanie Judith Molina</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-list">
+            <div ng-controller="portfolioAppCtrl" class="collapse navbar-collapse" id="navbar-collapse-list">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#/portfolio">Portfolio</a>
+                    <li >
+                        <a id="portfolio_link" href="#/portfolio" ng-click="highlight($event)" >Portfolio</a>
                     </li>
                     <li>
-                        <a href="#/photography">Photography</a>
+                        <a id="photography_link" href="#/photography" ng-click="highlight($event)">Photography</a>
                     </li>
                     <li>
-                        <a href="#/resume">Resume</a>
+                        <a id="resume_link" href="../data/resume/resume_test.pdf" target="_blank" ng-click="highlight($event)">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -63,12 +63,12 @@
 
     <div class="container content" ng-view ></div>
 
-    <!-- Footer -->
-    <!-- <footer>
+
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <ul class="list-inline">
+                    <!-- <ul class="list-inline">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -84,12 +84,12 @@
                         <li>
                             <a href="#contact">Contact</a>
                         </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                    </ul> -->
+                    <p class="copyright text-muted small">Copyright &copy; Stephanie Judith Molina 2015. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- jQuery -->
     <script src="/libs/jquery.js"></script>

@@ -23,6 +23,23 @@ h6 {
     font-weight: 300;
 }
 
+ul li:hover:after{
+   border-bottom: 2px solid rgba(119,119,119,0.4);
+   bottom: 0;
+   content: "";
+   position: absolute;
+   width: 90%;
+}
+
+.active-li{
+    border-bottom: 2px solid rgba(119,119,119,0.2);
+    bottom: 0;
+    content: "";
+    position: absolute;
+    width: 90%;
+}
+
+
 .html, .body {
   background-color: #f8f8f8;
 }
@@ -43,7 +60,7 @@ h6 {
     color: #f8f8f8;
     background: url(../data/img/intro-bg.jpg) no-repeat center center;
     background-size: cover;
-    opacity: .8; 
+    opacity: .8;
 }
 
 .intro-message {
@@ -198,6 +215,8 @@ nav {
 footer {
     padding: 50px 0;
     background-color: #f8f8f8;
+    position:absolute;
+    bottom:0;
 }
 
 p.copyright {
