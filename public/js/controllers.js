@@ -11,6 +11,11 @@ portfolioAppControllers.controller('portfolioAppCtrl', ['$scope', '$http' , func
         $("#"+id).addClass('active-li');
     };
 
+    // $scope.photos1 = ["Bravos2","Chirstopher","Dominique-Bertucci2", "Erik-at-H&M2"]
+    $scope.photos1 = ["Melting-Away22","Metra-Halsted-Steps2",
+                          "San-Procopio","Street-Artist"]
+    $scope.photos2 = ["Two-chairs","Underneathe-the-Old-Tracks","vivienne", "Three's-a-Party2"]
+
 }]);
 
 

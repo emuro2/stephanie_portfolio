@@ -23,7 +23,7 @@ h6 {
     font-weight: 300;
 }
 
-ul li:hover:after{
+.navbar-nav li:hover:after{
    border-bottom: 2px solid rgba(119,119,119,0.4);
    bottom: 0;
    content: "";
@@ -38,6 +38,7 @@ ul li:hover:after{
     position: absolute;
     width: 90%;
 }
+
 
 
 .html, .body {
@@ -132,6 +133,8 @@ nav {
 
 .thumb {
     margin-bottom: 30px;
+    width: 180px;
+    height: 120px;
 }
 
 .container {
@@ -215,8 +218,9 @@ nav {
 footer {
     padding: 50px 0;
     background-color: #f8f8f8;
-    position:absolute;
+    position:relative;
     bottom:0;
+    clear:both;
 }
 
 p.copyright {
