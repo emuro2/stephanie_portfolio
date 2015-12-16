@@ -4,6 +4,10 @@ var portfolioApp = angular.module('portfolioApp', ['ngRoute', 'portfolioAppContr
 portfolioApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
+      when('/paintings', {
+        templateUrl: 'partials/paintings.html',
+        controller: 'portfolioAppCtrl'
+      }).
       when('/portfolio', {
         templateUrl: 'partials/portfolio.html',
         controller: 'portfolioAppCtrl'
