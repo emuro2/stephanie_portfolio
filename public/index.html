@@ -29,6 +29,7 @@
 
 <body class="body">
 
+<div id="main-wrapper">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -42,14 +43,18 @@
                 </button>
                 <a class="navbar-brand topnav" href="#" id="stephanie-header">Stephanie Judith Molina</a>
             </div>
+            <br><br><br>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div ng-controller="portfolioAppCtrl" class="collapse navbar-collapse" id="navbar-collapse-list">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
                     <li >
                         <a id="paintings_link" href="#/paintings" ng-click="highlight($event)" >Paintings</a>
                     </li>
                     <li>
                         <a id="photography_link" href="#/photography" ng-click="highlight($event)">Photography</a>
+                    </li>
+                    <li >
+                        <a id="contact_link" href="#/contact" ng-click="highlight($event)" >Contact</a>
                     </li>
                     <li>
                         <a id="resume_link" href="../data/resume/MolinaResume.pdf" target="_blank" ng-click="highlight($event)">Resume</a>
@@ -90,7 +95,7 @@
             </div>
         </div>
     </footer>
-
+</div>
     <!-- jQuery -->
     <script src="/libs/jquery.js"></script>
     <script src="/libs/bootstrap.min.js"></script>

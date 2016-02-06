@@ -3,11 +3,25 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
- span {
-     display: block;
+ #main-wrapper {
+     min-height: 100%;
+     padding: 0 0 100px;
+     position: relative;
  }
 
+ footer {
+     bottom: 0;
+     height: 100px;
+     left: 0;
+     position: absolute;
+     width: 100%;
+ }
+
+.frame{
+    border-radius: 25px;
+    border: 2px solid #d4b8aa;
+    width: 500px;
+}
 
  .hovereffect {
  width:100%;
