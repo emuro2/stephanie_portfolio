@@ -7,8 +7,14 @@ portfolioAppControllers.controller('portfolioAppCtrl', ['$scope', '$http' , func
 
     $scope.highlight = function(event) {
         var id = event.target.id
-        $('.active-li').removeClass('active-li');
-        $("#"+id).addClass('active-li');
+        if (id == "stephanie-header") {
+            $('.active-li').removeClass('active-li');
+            $("#contact_link").addClass('active-li');
+        }
+        else {
+            $('.active-li').removeClass('active-li');
+            $("#"+id).addClass('active-li');
+        }
     };
 
     // $scope.photos1 = ["Bravos2","Chirstopher","Dominique-Bertucci2", "Erik-at-H&M2"]

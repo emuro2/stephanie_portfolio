@@ -3,9 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
- #main-wrapper {
-     min-height: 100%;
-     padding: 0 0 100px;
+ #main-wrapper, .container, .content {
+     height: 92%;
+     padding: 0 0 10px;
      position: relative;
  }
 
