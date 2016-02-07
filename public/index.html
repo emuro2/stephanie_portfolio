@@ -29,58 +29,57 @@
 
 <body class="body">
 
-<div id="main-wrapper" ng-controller="portfolioAppCtrl">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default  topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-list">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav hidden-xs" href="#/contact" id="stephanie-header" ng-click="highlight($event)">Stephanie Judith Molina</a>
-                <a class="navbar-brand topnav visible-xs" href="#/contact" id="stephanie-header" ng-click="highlight($event)">S.J.Molina</a>
+    <div id="main-wrapper" ng-controller="portfolioAppCtrl">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default  topnav" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-list">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav hidden-xs" href="#/contact" id="stephanie-header" ng-click="highlight($event)">Stephanie Judith Molina</a>
+                    <a class="navbar-brand topnav visible-xs" href="#/contact" id="stephanie-header" ng-click="highlight($event)">S.J.Molina</a>
+                </div>
+                <br><br><br>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div ng-controller="portfolioAppCtrl" class="collapse navbar-collapse" id="navbar-collapse-list">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li >
+                            <a id="paintings_link" href="#/paintings" ng-click="highlight($event)" >Paintings</a>
+                        </li>
+                        <li>
+                            <a id="photography_link" href="#/photography" ng-click="highlight($event)">Photography</a>
+                        </li>
+                        <li >
+                            <a id="contact_link" href="#/contact" ng-click="highlight($event)" >Contact</a>
+                        </li>
+                        <li>
+                            <a id="resume_link" href="../data/resume/MolinaResume.pdf" target="_blank" ng-click="highlight($event)">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <br><br><br>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div ng-controller="portfolioAppCtrl" class="collapse navbar-collapse" id="navbar-collapse-list">
-                <ul class="nav navbar-nav navbar-left">
-                    <li >
-                        <a id="paintings_link" href="#/paintings" ng-click="highlight($event)" >Paintings</a>
-                    </li>
-                    <li>
-                        <a id="photography_link" href="#/photography" ng-click="highlight($event)">Photography</a>
-                    </li>
-                    <li >
-                        <a id="contact_link" href="#/contact" ng-click="highlight($event)" >Contact</a>
-                    </li>
-                    <li>
-                        <a id="resume_link" href="../data/resume/MolinaResume.pdf" target="_blank" ng-click="highlight($event)">Resume</a>
-                    </li>
-                </ul>
+            <!-- /.container -->
+        </nav>
+
+        <div class="container content" ng-view ></div>
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="copyright text-muted small">Copyright &copy; Stephanie Judith Molina 2015. All Rights Reserved.</p>
+                    </div>
+                </div>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div class="container content" ng-view ></div>
-
-
-
-</div>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="copyright text-muted small">Copyright &copy; Stephanie Judith Molina 2015. All Rights Reserved.</p>
-            </div>
-        </div>
+        </footer>
     </div>
-</footer>
     <!-- jQuery -->
     <script src="/libs/jquery.js"></script>
     <script src="/libs/bootstrap.min.js"></script>
@@ -93,6 +92,21 @@
     <!-- <script src="/bower_components/angular-material/angular-material.min.js"></script> -->
     <script src="/js/app.js"></script>
     <script src="/js/controllers.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            //Check if the current URL contains '#'
+            if(document.URL.indexOf("#")==-1)
+            {
+                // Set the URL to whatever it was plus "#".
+                url = document.URL+"#";
+                location = "#";
+
+                //Reload the page
+                location.reload(true);
+            }
+        });
+    </script>
 </body>
 
 </html>
